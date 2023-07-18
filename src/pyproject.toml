@@ -36,11 +36,16 @@ coverage = "^6.1.2"
 coverage-badge = "^1.1.0"
 
 # Documentation
+interrogate = "^1.5.0"
+{% if cookiecutter.use_mkdocs -%}
 mkdocs = "^1.4.3"
 mkdocs-material = "^9.1.18"
 Pygments = "^2.15.1"
 mkdocstrings = "^0.22.0"
+{% if cookiecutter.add_click_cli -%}
 mkdocs-click = "^0.8.0"
+{% endif -%}
+{% endif -%}
 
 # Security
 bandit = "^1.7.5"
