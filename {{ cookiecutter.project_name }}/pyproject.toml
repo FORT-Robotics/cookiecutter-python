@@ -1,19 +1,19 @@
 [tool.poetry]
 
-name = "{{ cookiecutter.project_slug }}"
+name = "{{ cookiecutter.project_name }}"
 version = "0.1.0"
 description = "{{ cookiecutter.description }}"
 authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.email }}>"]
 license = "{{ cookiecutter.license }}"
 readme = "README.md"
-homepage = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}"
-repository = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}"
-documentation = "https://{{cookiecutter.project_slug}}.readthedocs.io"
+homepage = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}"
+repository = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}"
+documentation = "https://{{cookiecutter.project_name}}.readthedocs.io"
 packages = [{ include = "{{cookiecutter.package_name}}", from = "src" }]
 
 [tool.poetry.urls]
-"Releases" = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}/releases"
-"Issues" = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}/issues"
+"Releases" = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/releases"
+"Issues" = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/issues"
 
 [tool.poetry.dependencies]
 python = "^3.10"
